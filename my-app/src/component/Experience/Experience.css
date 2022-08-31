@@ -1,0 +1,79 @@
+.exp__container {
+  /* height: 70vh; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+}
+
+.exp__frontend,
+.exp__backend {
+  background: var(--color-bg-variant);
+  border-radius: 2rem;
+  padding: 2.4rem 5rem;
+  border: 1px solid transparent;
+}
+.exp__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+/* .exp__frontend:hover,
+.exp__backend:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+} */
+
+.exp__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.exp__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.exp__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.exp__details-icons {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+/* ############### MEDIA QUEIRES (MEDIUM DEVICES) ############## */
+@media screen and (max-width: 1024px) {
+  .exp__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+
+  .exp__frontend,
+  .exp__backend {
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 2.4rem 5rem; */
+  }
+
+  .exp__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.4rem;
+  }
+}
+
+/* ############### MEDIA QUEIRES (SMALLS DEVICES) ############## */
+@media screen and (max-width: 600px) {
+  .exp__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+}
